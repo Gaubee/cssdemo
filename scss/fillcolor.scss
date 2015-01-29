@@ -1,0 +1,403 @@
+@import'color.scss';
+.fg-white {
+    color: $white;
+}
+.fg-ashen {
+    color: $ashen;
+}
+.fg-silver {
+    color: $silver;
+}
+.fg-gray {
+    color: $gray;
+}
+.fg-black {
+    color: $black;
+}
+.fg-red {
+    color: $red;
+}
+.fg-crimson {
+    color: $crimson;
+}
+.fg-green {
+    color: $green;
+}
+.fg-blue {
+    color: $blue;
+}
+.fg-yellow {
+    color: $yellow;
+}
+.fg-yellowish {
+    color: $yellowish;
+}
+.fg-gold {
+    color: $gold;
+}
+.fg-orange {
+    color: $orange;
+}
+.fg-apricot {
+    color: $apricot;
+}
+.fg-brownness {
+    color: $brownness;
+}
+.fg-colormoment {
+    color: $colormoment;
+}
+.fg-cherry {
+    color: $cherry;
+}
+.fg-roseous {
+    color: $roseous;
+}
+.fg-redplum {
+    color: $redplum;
+}
+.fg-lime {
+    color: $lime;
+}
+.fg-whitegreen {
+    color: $whitegreen;
+}
+.fg-inst {
+    color: $inst;
+}
+.fg-cyan {
+    color: $cyan;
+}
+.fg-emerald {
+    color: $emerald;
+}
+.fg-teal {
+    color: $teal;
+}
+.fg-cobalt {
+    color: $cobalt;
+}
+.fg-indigo {
+    color: $indigo;
+}
+.fg-violet {
+    color: $violet;
+}
+.fg-pink {
+    color: $pink;
+}
+.fg-magenta {
+    color: $magenta;
+}
+.fg-amber {
+    color: $amber;
+}
+.fg-brown {
+    color: $brown;
+}
+.fg-olive {
+    color: $olive;
+}
+.fg-steel {
+    color: $steel;
+}
+.fg-mauve {
+    color: $mauve;
+}
+.fg-taupe {
+    color: $taupe;
+}
+.fg-dark {
+    color: $dark;
+}
+.fg-darker {
+    color: $darker;
+}
+.fg-transparent {
+    color: $transparent;
+}
+.fg-darkBrown {
+    color: $darkBrown;
+}
+.fg-darkCrimson {
+    color: $darkCrimson;
+}
+.fg-darkMagenta {
+    color: $darkMagenta;
+}
+.fg-darkIndigo {
+    color: $darkIndigo;
+}
+.fg-darkCyan {
+    color: $darkCyan;
+}
+.fg-darkCobalt {
+    color: $darkCobalt;
+}
+.fg-darkTeal {
+    color: $darkTeal;
+}
+.fg-darkEmerald {
+    color: $darkEmerald;
+}
+.fg-darkGreen {
+    color: $darkGreen;
+}
+.fg-darkOrange {
+    color: $darkOrange;
+}
+.fg-darkRed {
+    color: $darkRed;
+}
+.fg-darkPink {
+    color: $darkPink;
+}
+.fg-darkViolet {
+    color: $darkViolet;
+}
+.fg-darkBlue {
+    color: $darkBlue;
+}
+.fg-lightBlue {
+    color: $lightBlue;
+}
+.fg-lightRed {
+    color: $lightRed;
+}
+.fg-lightGreen {
+    color: $lightGreen;
+}
+.fg-lighterBlue {
+    color: $lighterBlue;
+}
+.fg-lightTeal {
+    color: $lightTeal;
+}
+.fg-lightOlive {
+    color: $lightOlive;
+}
+.fg-lightOrange {
+    color: $lightOrange;
+}
+.fg-lightPink {
+    color: $lightPink;
+}
+.fg-grayDark {
+    color: $grayDark;
+}
+.fg-grayDarker {
+    color: $grayDarker;
+}
+.fg-grayLight {
+    color: $grayLight;
+}
+.fg-grayLighter {
+    color: $grayLighter;
+}
+.fg-ink {
+    color: $ink;
+}
+.fg-lightWhite {
+    color: $lightWhite;
+}
+.bg-white {
+    background-color: $white;
+}
+.bg-ashen {
+    background-color: $ashen;
+}
+.bg-silver {
+    background-color: $silver;
+}
+.bg-gray {
+    background-color: $gray;
+}
+.bg-black {
+    background-color: $black;
+}
+.bg-red {
+    background-color: $red;
+}
+.bg-crimson {
+    background-color: $crimson;
+}
+.bg-green {
+    background-color: $green;
+}
+.bg-blue {
+    background-color: $blue;
+}
+.bg-yellow {
+    background-color: $yellow;
+}
+.bg-yellowish {
+    background-color: $yellowish;
+}
+.bg-gold {
+    background-color: $gold;
+}
+.bg-orange {
+    background-color: $orange;
+}
+.bg-apricot {
+    background-color: $apricot;
+}
+.bg-brownness {
+    background-color: $brownness;
+}
+.bg-colormoment {
+    background-color: $colormoment;
+}
+.bg-cherry {
+    background-color: $cherry;
+}
+.bg-roseous {
+    background-color: $roseous;
+}
+.bg-redplum {
+    background-color: $redplum;
+}
+.bg-lime {
+    background-color: $lime;
+}
+.bg-whitegreen {
+    background-color: $whitegreen;
+}
+.bg-inst {
+    background-color: $inst;
+}
+.bg-cyan {
+    background-color: $cyan;
+}
+.bg-emerald {
+    background-color: $emerald;
+}
+.bg-teal {
+    background-color: $teal;
+}
+.bg-cobalt {
+    background-color: $cobalt;
+}
+.bg-indigo {
+    background-color: $indigo;
+}
+.bg-violet {
+    background-color: $violet;
+}
+.bg-pink {
+    background-color: $pink;
+}
+.bg-magenta {
+    background-color: $magenta;
+}
+.bg-amber {
+    background-color: $amber;
+}
+.bg-brown {
+    background-color: $brown;
+}
+.bg-olive {
+    background-color: $olive;
+}
+.bg-steel {
+    background-color: $steel;
+}
+.bg-mauve {
+    background-color: $mauve;
+}
+.bg-taupe {
+    background-color: $taupe;
+}
+.bg-dark {
+    background-color: $dark;
+}
+.bg-darker {
+    background-color: $darker;
+}
+.bg-transparent {
+    background-color: $transparent;
+}
+.bg-darkBrown {
+    background-color: $darkBrown;
+}
+.bg-darkCrimson {
+    background-color: $darkCrimson;
+}
+.bg-darkMagenta {
+    background-color: $darkMagenta;
+}
+.bg-darkIndigo {
+    background-color: $darkIndigo;
+}
+.bg-darkCyan {
+    background-color: $darkCyan;
+}
+.bg-darkCobalt {
+    background-color: $darkCobalt;
+}
+.bg-darkTeal {
+    background-color: $darkTeal;
+}
+.bg-darkEmerald {
+    background-color: $darkEmerald;
+}
+.bg-darkGreen {
+    background-color: $darkGreen;
+}
+.bg-darkOrange {
+    background-color: $darkOrange;
+}
+.bg-darkRed {
+    background-color: $darkRed;
+}
+.bg-darkPink {
+    background-color: $darkPink;
+}
+.bg-darkViolet {
+    background-color: $darkViolet;
+}
+.bg-darkBlue {
+    background-color: $darkBlue;
+}
+.bg-lightBlue {
+    background-color: $lightBlue;
+}
+.bg-lightRed {
+    background-color: $lightRed;
+}
+.bg-lightGreen {
+    background-color: $lightGreen;
+}
+.bg-lighterBlue {
+    background-color: $lighterBlue;
+}
+.bg-lightTeal {
+    background-color: $lightTeal;
+}
+.bg-lightOlive {
+    background-color: $lightOlive;
+}
+.bg-lightOrange {
+    background-color: $lightOrange;
+}
+.bg-lightPink {
+    background-color: $lightPink;
+}
+.bg-grayDark {
+    background-color: $grayDark;
+}
+.bg-grayDarker {
+    background-color: $grayDarker;
+}
+.bg-grayLight {
+    background-color: $grayLight;
+}
+.bg-grayLighter {
+    background-color: $grayLighter;
+}
+.bg-ink {
+    background-color: $ink;
+}
+.bg-lightWhite {
+    background-color: $lightWhite;
+}

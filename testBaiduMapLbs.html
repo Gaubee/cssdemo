@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+    <title>Soy Milk UI</title>
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js">
+
+    </script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=Cjm0Sm7N0P2rTgpF2tEw1tg1"></script>
+    <style type="text/css">
+		#allmap{
+			width: 600px;
+			height: 450px;
+		}
+    </style>
+</head>
+
+<body>
+    <div id="">店铺名：
+        <input type="text" id="name" />
+    </div>
+    <div>地址：
+        <input type="text" id="addr" />
+    </div>
+    <div>经度：
+        <input type="text" id="log" />
+    </div>
+    <div>维度：
+        <input type="text" id="shot" />
+    </div>
+    <div>电话：
+        <input type="text" id="tel" />
+    </div>
+    <button id="sumbit">提交</button>
+	<br/>
+	<br/>
+	<br/>
+	<input type="text" id="city" />
+	<button id="changecity">改变城市</button>
+    <button id="addmkr">添加标注点</button>
+	<div id="allmap"></div>
+    <script type="text/javascript">
+    var map = new BMap.Map("allmap");
+    var localSearch = new BMap.LocalSearch(map);
+    map.addControl(new BMap.NavigationControl()); //添加默认缩放平移控件
+    map.addControl(new BMap.OverviewMapControl()); //添加默认缩略地图控件
+    map.enableScrollWheelZoom(); //启用滚轮放大缩小，默认禁用
+    map.enableContinuousZoom(); //启用地图惯性拖拽，默认禁用
+    var mkr;
+     // 地图拖拽改变标注位置
+    map.addEventListener("dragend", function() {
+    	var pt = map.getBounds().getCenter();
+    	mkr.point.lng = pt.lng;
+    	mkr.point.lat = pt.lat;
+    });
+    var cityName;
+    function myFun(result) {
+    	if (result.name) {
+    		var cityName = result.name;
+    	}else{
+    		var cityName="北京"
+    	};
+    	showMap(cityName);
+    }
+    var myCity = new BMap.LocalCity();
+    myCity.get(function(e){
+    	console.log(e.name)
+    });
+    myCity.get(myFun);
+
+    // 展示地图
+    function showMap(cityName){
+    	localSearch.setSearchCompleteCallback(function(searchResult) {
+    		var poi = searchResult.getPoi(0);
+    		console.log(poi.city);
+    		map.centerAndZoom(poi.city||cityName);
+    		map.clearOverlays();
+    		mkr = new BMap.Marker(new BMap.Point(poi.point.lng, poi.point.lat), {
+    			enableDragging: true,
+    			raiseOnDrag: true
+    		});
+    		map.addOverlay(mkr);
+    		// 添加标注点拖动事件
+    		mkr.addEventListener('dragend', function(e) {
+    			alert(e.point.lng + ', ' + e.point.lat);
+    		})
+    	})
+    	localSearch.search(cityName);
+    }
+
+
+
+    $("#addmkr").click(function() {
+    	mkr.point.lng = map.getBounds().getCenter().lng;
+    	mkr.point.lat = map.getBounds().getCenter().lat;
+    })
+     $("#changecity").click(function() {
+    	showMap($("#city").val());
+    })
+    </script>
+</body>
+
+</html>
